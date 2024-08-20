@@ -34,7 +34,7 @@ app.post('/temp-login',async (req,res)=>{
         client.set("layoutUserMapping",JSON.stringify(mapping))
     }else{
         layoutAssigned = 1
-        layoutUserMapping[1]++
+        layoutUserMapping[layoutAssigned]++
         client.set("layoutUserMapping",JSON.stringify(layoutUserMapping))
     }
 
